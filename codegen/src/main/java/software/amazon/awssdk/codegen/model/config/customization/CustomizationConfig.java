@@ -102,7 +102,7 @@ public class CustomizationConfig {
     /**
      * APIs that have no required arguments in their model but can't be called via a simple method
      */
-    private List<String> blacklistedSimpleMethods = new ArrayList<>();
+    private List<String> excludedSimpleMethods = new ArrayList<>();
 
     /**
      * APIs that are not Get/List/Describe APIs that have been verified that they are able
@@ -348,12 +348,12 @@ public class CustomizationConfig {
         this.serviceSpecificHttpConfig = serviceSpecificHttpConfig;
     }
 
-    public List<String> getBlacklistedSimpleMethods() {
-        return blacklistedSimpleMethods;
+    public List<String> getExcludedSimpleMethods() {
+        return excludedSimpleMethods;
     }
 
-    public void setBlacklistedSimpleMethods(List<String> blackListedSimpleMethods) {
-        this.blacklistedSimpleMethods = blackListedSimpleMethods;
+    public void setExcludedSimpleMethods(List<String> excludedSimpleMethods) {
+        this.excludedSimpleMethods = excludedSimpleMethods;
     }
 
     public List<String> getVerifiedSimpleMethods() {
